@@ -1,0 +1,442 @@
+<!--Teams Page-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Learn Student Club Teams</title>
+
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="{%static 'images/home/MLSC Logo.png' %}" alt="Logo" class="team-logo">
+            <a href="{% url 'home' %}" class="logo">Microsoft Learn Student Club<span class="animate" style="--i:1;"></span></a>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+        <nav class="navbar">
+          <a href="{% url 'home' %}" id="index-link" >Home</a>
+          <a href="{% url 'team' %}" id="teams-link" class="active">Team</a>
+          <a href="{% url 'event' %}" id="events-link">Events</a>
+          <a href="{% url 'blog' %}" id="blogs-link">Blog</a>
+          <a href="{% url 'project' %}" id="projects-link">Projects</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="profiles first-section">
+        <div class="centered">
+          <div class="img"></div>
+          <img src="{%static 'images/teams/bg-teams.svg' %}" width="900" height="1000">
+            <h1 style="margin-top: -240px;">Meet Our Core Team!</h1>
+            <h2>Lead Advisors</h2>
+        </div>
+        <div class="row">
+            <div class="profile first-section-profile">
+                <div class="circle">
+                    <img src="developer1.jpg" alt="Developer 1">
+                </div>
+                <p class="developer-name">A. Leelavathi</p>
+                <p class="role">Faculty Advisor</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile first-section-profile">
+                <div class="circle">
+                    <img src="developer2.jpg" alt="Developer 2">
+                </div>
+                <p class="developer-name">N. Tejitha</p>
+                <p class="role">Lead Advisor</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+    </section>
+    
+    
+    <section class="profiles a">
+        <div class="centered second">
+            <h2>Core</h2>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer1.jpg" alt="Developer 1">
+                </div>
+                <p class="developer-name">N. Chandu</p>
+                <p class="role">Lead</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer2.jpg" alt="Developer 2">
+                </div>
+                <p class="developer-name">S. Sri Satya</p>
+                <p class="role">Secretary</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer3.jpg" alt="Developer 3">
+                </div>
+                <p class="developer-name">P. Hemanth</p>
+                <p class="role">Technical Architect</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer4.jpg" alt="Developer 4">
+                </div>
+                <p class="developer-name">V. Kasyap</p>
+                <p class="role">Outreach Affairs Lead</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="profiles a">
+        <div class="centered third">
+            <h2>Generative AI</h2>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer1.jpg" alt="Developer 1">
+                </div>
+                <p class="developer-name">V.Sowmya</p>
+                <p class="role">Head</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer2.jpg" alt="Developer 2">
+                </div>
+                <p class="developer-name">Rajiya Sulthana</p>
+                <p class="role">Associate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer3.jpg" alt="Developer 3">
+                </div>
+                <p class="developer-name">A.Diwakar</p>
+                <p class="role">Subordinate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer4.jpg" alt="Developer 4">
+                </div>
+                <p class="developer-name">M. Navya Sri</p>
+                <p class="role">Subordinate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="profiles a">
+        <div class="centered fourth">
+            <h2>Data Science and Machine Learning</h2>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer1.jpg" alt="Developer 1">
+                </div>
+                <p class="developer-name">S. Deepika</p>
+                <p class="role">Head</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer2.jpg" alt="Developer 2">
+                </div>
+                <p class="developer-name">P.S. Akash</p>
+                <p class="role">Associate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer3.jpg" alt="Developer 3">
+                </div>
+                <p class="developer-name">P. Mani Chandana</p>
+                <p class="role">Subordinate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="developer4.jpg" alt="Developer 4">
+                </div>
+                <p class="developer-name">N.S.C.M. Mallesh</p>
+                <p class="role">Subordinate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="profiles a">
+        <div class="centered fifth">
+            <h2>Microsoft 365 and PowerPlatform</h2>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="/images/teams/hasini-mpp.png" alt="Developer 1">
+                </div>
+                <p class="developer-name">K. Hasini</p>
+                <p class="role">Head</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="/images/teams/aishwarya-mpp.png" alt="Developer 2">
+                </div>
+                <p class="developer-name">Aishwarya</p>
+                <p class="role">Associate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+            <div class="profile">
+                <div class="circle">
+                    <img src="/images/teams/sheema-mpp.png" alt="Developer 3">
+                </div>
+                <p class="developer-name">Sheema Sheik</p>
+                <p class="role">Subordinate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="profile">
+                <div class="circle">
+                    <img src="/images/teams/ganesh-mpp.png" alt="Developer 4">
+                </div>
+                <p class="developer-name">V. Ganesh</p>
+                <p class="role">Subordinate</p>
+                <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="profiles a">
+        <div class="centered sixth">
+          <h2>Azure Cloud</h2>
+        </div>
+        <div class="row">
+          <div class="profile">
+            <div class="circle">
+                <img src="developer1.jpg" alt="Developer 1">
+            </div>
+            <p class="developer-name">G. Supriya</p>
+            <p class="role">Head</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer2.jpg" alt="Developer 2">
+            </div>
+            <p class="developer-name">K. Devi Mahendra</p>
+            <p class="role">Associate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer3.jpg" alt="Developer 3">
+            </div>
+            <p class="developer-name">K. Pallavi</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="row a">
+          <div class="profile">
+            <div class="circle">
+              <img src="developer4.jpg" alt="Developer 4">
+            </div>
+            <p class="developer-name">K. Anjani</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer5.jpg" alt="Developer 5">
+            </div>
+            <p class="developer-name">K. Anitha Rani</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profiles a">
+        <div class="centered seventh">
+          <h2>Event Management</h2>
+        </div>
+        <div class="row">
+          <div class="profile">
+            <div class="circle">
+                <img src="developer1.jpg" alt="Developer 1">
+            </div>
+            <p class="developer-name">G. Manaswi</p>
+            <p class="role">Head</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer2.jpg" alt="Developer 2">
+            </div>
+            <p class="developer-name">V. Gopi Siva Krishna</p>
+            <p class="role">Associate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer3.jpg" alt="Developer 3">
+            </div>
+            <p class="developer-name">K. Likith</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="row a">
+          <div class="profile">
+            <div class="circle">
+              <img src="developer4.jpg" alt="Developer 4">
+            </div>
+            <p class="developer-name">P. Kalyan Kumar</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer5.jpg" alt="Developer 5">
+            </div>
+            <p class="developer-name">P. Pavani</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profiles a">
+        <div class="centered eigth">
+          <h2>Public Relations</h2>
+        </div>
+        <div class="row">
+          <div class="profile">
+            <div class="circle">
+                <img src="developer1.jpg" alt="Developer 1">
+            </div>
+            <p class="developer-name">A. Jaya Mounika</p>
+            <p class="role">Head</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer2.jpg" alt="Developer 2">
+            </div>
+            <p class="developer-name">K. Fardeen Md.</p>
+            <p class="role">Associate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer3.jpg" alt="Developer 3">
+            </div>
+            <p class="developer-name">B. Akhila</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="row a">
+          <div class="profile">
+            <div class="circle">
+              <img src="developer4.jpg" alt="Developer 4">
+            </div>
+            <p class="developer-name">R. Prasanna Kumar</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer5.jpg" alt="Developer 5">
+            </div>
+            <p class="developer-name">M. Spandana</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profiles a">
+        <div class="centered ninth">
+          <h2>Media Marketing and Creativity</h2>
+        </div>
+        <div class="row">
+          <div class="profile">
+            <div class="circle">
+                <img src="developer1.jpg" alt="Developer 1">
+            </div>
+            <p class="developer-name">U. Dayanand Kumar</p>
+            <p class="role">Head</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer2.jpg" alt="Developer 2">
+            </div>
+            <p class="developer-name">Bala Santhosh</p>
+            <p class="role">Associate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer3.jpg" alt="Developer 3">
+            </div>
+            <p class="developer-name">A.C. Naga Sai</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+        <div class="row a">
+          <div class="profile">
+            <div class="circle">
+              <img src="developer4.jpg" alt="Developer 4">
+            </div>
+            <p class="developer-name">V.S.D. Narayana</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="profile">
+            <div class="circle">
+              <img src="developer5.jpg" alt="Developer 5">
+            </div>
+            <p class="developer-name">S. Vinay Kumar</p>
+            <p class="role">Subordinate</p>
+            <p class="linkedin-handle"><a href="#">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    
+
+      <script src="{%static 'js/script.js' %}"></script>
+</body>
+
+</html>
